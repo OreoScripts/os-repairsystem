@@ -5,6 +5,7 @@
 #Discord Support [https://discord.gg/nQ4YaxkaWZ]
 
 #WebSite [https://coreversion.com/]
+![image](https://user-images.githubusercontent.com/101866296/232336660-1eb01f48-aaf5-4f05-8e1f-94a4d8e6232a.png)
 
 # Dependencies
 * qbcore [https://github.com/qbcore-framework/qb-core] **latest version**
