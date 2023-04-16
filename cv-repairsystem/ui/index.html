@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv-reapirsystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="MainBody">
+        <header>
+            <div class="text1">
+                Benny's
+                <div class="text2">
+                    Original
+                </div>
+            </div>
+            <div class="cbtn">
+                <button id="cbtn" onclick="ButtonClicked('close')">
+                    Close
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="repair-dis">
+                <!-- Body Health Start -->
+                <div class="repair">
+                    <div class="Body-Health">
+                        <div class="body-text1">
+                        Body Health
+                        </div>  
+                        <div id="Body-Health-percentage" style="color: #3e8562;">
+                        81% 
+                        </div>
+                        <div class="price-box">
+                            <div id="price">
+                                $28
+                            </div>
+                        </div>
+                        <div class="body-btn">
+                            <button id="body-health-btn" onclick="ButtonClicked('body')" >Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Body Health End -->
+                <!-- Engine Health Start -->
+                <div class="repair">
+                    <div class="Engine-Health">
+                        <div class="Engine-text1">
+                            Engine Health
+                        </div>  
+                        <div id="Engine-Health-percentage" style="color: #3e8562;">
+                        87% 
+                        </div>
+                        <div class="Engine-price-box">
+                            <div id="Engine-price">
+                                $19
+                            </div>
+                        </div>
+                        <div class="Engine-btn">
+                            <button id="Engine-health-btn" onclick="ButtonClicked('engine')">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engine Health End -->
+                <!-- Dirt Level Start -->
+                <div class="repair">
+                    <div class="Dirt-Level">
+                        <div class="Dirt-text1">
+                            Dirt Level
+                        </div> 
+                        <div class="percentage">
+                            <div id="Dirt-Health-percentage" style="color: #3e8562;">
+                                6% 
+                            </div>
+                        </div>
+                        <div class="Dirt-price-box">
+                            <div id="Dirt-price">
+                                $141
+                            </div>
+                        </div>
+                        <div class="Dirt-btn">
+                            <button id="Dirt-health-btn" onclick="ButtonClicked('dirt')" data-button="dirt">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dirt Level End -->
+            </div>
+            <div class="full-repair">
+                <h1>Full Repair</h1>
+                <div style="color: #818180;">
+                    All around repair for your car.
+                </div>
+                <div style="color: #818180;">package with an 10% discount.</div>
+                <div class="full-repair-price-box">
+                    <div id="full-repair-price">
+                        $169
+                    </div>
+                </div>
+                <div class="full-repair-btn">
+                    <button id="full-repair-btn" onclick="ButtonClicked('full')">Buy</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
