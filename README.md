@@ -6,7 +6,7 @@
 #WebSite [https://coreversion.com/]
 
 # Dependencies
-* qbcore [https://github.com/qbcore-framework/qb-core] latest version *
+* qbcore [https://github.com/qbcore-framework/qb-core] **latest version**
 * qbcore [https://github.com/bashenga/polyzonehelper]
 
 
