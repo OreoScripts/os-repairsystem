@@ -125,7 +125,8 @@ end
 
 
 ---Bennys
-AddEventHandler("polyzonehelper:enter", function(zone)
+
+RegisterNetEvent("ps-zones:enter", function(zone)
     if zone ~= "bennys" then return end
     if IsPedSittingInAnyVehicle(PlayerPedId()) then 
     exports['qb-core']:DrawText("[E] Bennys")
@@ -133,7 +134,9 @@ AddEventHandler("polyzonehelper:enter", function(zone)
     end
 end)
 
-AddEventHandler("polyzonehelper:exit", function(zone)
+
+
+RegisterNetEvent("ps-zones:leave", function(zone)
     if zone ~= "bennys" then return end
 
     exports['qb-core']:HideText()
@@ -141,7 +144,7 @@ AddEventHandler("polyzonehelper:exit", function(zone)
 end)
 
 Citizen.CreateThread(function()
-    exports["polyzonehelper"]:AddBoxZone("bennys", Config.Mechanics[1].coords, 2, 2, {
+    exports["ps-zones"]:CreateBoxZone("bennys", Config.Mechanics[1].coords, 2, 2, {
         debugPoly = false,
         heading=0,
         Config.Mechanics[1].minZ,
