@@ -19,5 +19,5 @@ ui_page {
 }
 
 dependencies {
-    'polyzonehelper'
+    'ps-zones'
 }
