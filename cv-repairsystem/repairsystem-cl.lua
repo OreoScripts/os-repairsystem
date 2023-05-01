@@ -140,13 +140,15 @@ AddEventHandler("polyzonehelper:exit", function(zone)
     listening = false
 end)
 
-Citizen.CreateThread(function()
-    exports["polyzonehelper"]:AddBoxZone("bennys", Config.Mechanics[1].coords, 2, 2, {
-        debugPoly = false,
-        heading=0,
-        Config.Mechanics[1].minZ,
-        Config.Mechanics[1].maxZ
-    })
+CreateThread(function()
+    for k,v in pairs(Config.Mechanics) do
+        exports["polyzonehelper"]:AddBoxZone("bennys", v.coords, 2, 2, {
+            debugPoly = false,
+            heading=0,
+            v.blipData.minZ,
+            v.blipData.maxZ,
+        })
+    end
 end)
 
 function OpenBennys()
