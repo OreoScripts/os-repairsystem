@@ -1,5 +1,7 @@
 # cv-repairsystem
 
+#Note: Previously the script was created to CoreVersion and now reverted to the original copyright owner
+
 # CoreVersion cv-reapirsystem Script Thanks for download its very helpful for us.
 
 #Discord Support [https://discord.gg/nQ4YaxkaWZ]
