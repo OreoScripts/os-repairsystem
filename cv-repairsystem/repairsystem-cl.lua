@@ -22,7 +22,7 @@ RegisterNetEvent("QBCore:Player:SetPlayerData",function(var)
 end)
 
 
-RegisterNetEvent("cv-repair:open",function(notopen)
+RegisterNetEvent("os-repair:open",function(notopen)
     local ped = PlayerPedId()
     local vehicle = GetVehiclePedIsIn(ped)
     local vehicleseat = GetPedInVehicleSeat(vehicle, -1)
@@ -46,11 +46,11 @@ end)
 
 RegisterNUICallback("UseButton", function(data, cb)
     if PlayerData.money.cash < data.price then QBCore.Functions.Notify("You don't have enough money", "error") cb(false) return end
-    TriggerServerEvent("cv-repair:repairButton", data.button, data.price)
+    TriggerServerEvent("os-repair:repairButton", data.button, data.price)
     cb(true)
 end)
 
-RegisterNetEvent("cv-repair:repair",function(button)
+RegisterNetEvent("os-repair:repair",function(button)
     local ped = PlayerPedId()
     local vehicle = GetVehiclePedIsIn(ped)
 
@@ -71,7 +71,7 @@ RegisterNetEvent("cv-repair:repair",function(button)
         action = "update",
         button = button
     })
-    TriggerServerEvent("cv-repair:open", false)
+    TriggerServerEvent("os-repair:open", false)
 end)
 
 RegisterNUICallback("close", function()
@@ -156,7 +156,7 @@ function OpenBennys()
 
         while listening do
             if IsControlJustPressed(0, 38) then
-                TriggerEvent("cv-repair:open")
+                TriggerEvent("os-repair:open")
                 exports['qb-core']:HideText()
             end
             Wait(0)
