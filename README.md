@@ -1,12 +1,11 @@
-# cv-repairsystem
+# os-repairsystem
 
 #Note: Previously the script was created to CoreVersion and now reverted to the original copyright owner
 
-# CoreVersion cv-reapirsystem Script Thanks for download its very helpful for us.
+# Oreo Scripts os-reapirsystem Script Thanks for download its very helpful for us.
 
-#Discord Support [https://discord.gg/nQ4YaxkaWZ]
+#Discord Support [https://discord.gg/t66FpjcMRH]
 
-#WebSite [https://coreversion.com/]
 ![image](https://user-images.githubusercontent.com/101866296/232336660-1eb01f48-aaf5-4f05-8e1f-94a4d8e6232a.png)
 
 # Dependencies
