@@ -58,7 +58,7 @@ function OpenUI(data) {
                 </div>
                 <div style="color: #878582;">package with an 10% discount.</div>
                 <div class="full-repair-price-box">
-                    <div id="full-repair-price">
+                    <div id="full-repair-price">a
                         $${data.fullprice}
                     </div>
                 </div>
@@ -76,10 +76,10 @@ function OpenUI(data) {
 function ButtonClicked(button, price) {
     if (button == "close") {
         $("#MainBody").fadeOut()
-        $.post(`https://cv-repairsystem/close`)   
+        $.post(`https://os-repairsystem/close`)   
     } else {
         if (price > 0){
-            $.post(`https://cv-repairsystem/UseButton`, JSON.stringify({
+            $.post(`https://os-repairsystem/UseButton`, JSON.stringify({
                 button: button,
                 price: price
             }))  
